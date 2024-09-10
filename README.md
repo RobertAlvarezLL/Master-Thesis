@@ -1,19 +1,11 @@
 # Master’s Thesis: Time-Varying Effects of Extreme Weather Shocks on Main Macroeconomic Indicators of Spain
 
-## Overview
-This repository contains the code developed for my Master’s Thesis, part of the **Master’s degree in Statistics for Data Science** at **Carlos III University**, 2023-2024. The thesis is titled:
+## Code Overview
 
-**Time-Varying Effects of Extreme Weather Shocks on Main Macroeconomic Indicators of Spain**
+The code provided in this repository illustrates our approach to implementing Structural Vector Autoregression (SVAR) models with sign restrictions in R, addressing the gap left by the absence of a pre-existing R package that fully accommodates our analytical needs. This custom approach combines the use of the `vars` package for initial VAR estimation with custom functions to impose sign restrictions and identify valid structural matrices. The iterative process ensures that the imposed economic theory-based constraints are met.
 
-This thesis explores the dynamic effects of extreme weather events, represented by the European Extreme Climate Index (E3CI), on key macroeconomic variables in Spain, such as GDP growth, inflation, and unemployment. Time-Varying Parameter Vector Autoregression (TVP-VAR) and Structural Vector Autoregression (SVAR) models are used to analyze these relationships.
+For the Time-Varying Parameters (TVP) Bayesian VAR model, the code consists of the implementation in the **BVARS** package (Krueger, 2015) of the Primiceri (2005) model, including the corrigendum by Del Negro and Primiceri (2015). Additionally, a modification to the Primiceri model has been implemented following the method proposed by Arias, Rubio-Ramírez, and Waggoner (2014) and further applied by Leiva-Leon and Uzeda (2023) to incorporate sign restrictions into the TVP-VAR framework. This adaptation allows us to analyze the evolving impact of extreme weather shocks on macroeconomic variables in a dynamic and flexible manner.
 
-## Repository Structure
 
-- **`code/`**: Contains all R and Python scripts used to estimate the models, process data, and generate results.
-- **`data/`**: Placeholder for datasets used in the analysis. Datasets may not be included due to size or confidentiality.
-- **`results/`**: Will contain output plots and figures generated from the code, such as impulse response functions (IRFs).
-  
-## Important Note
-This repository primarily focuses on posting the **code** used in the thesis work. The final thesis document, datasets, and extensive documentation may not be included here.
 
 
